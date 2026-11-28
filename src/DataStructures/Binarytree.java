@@ -56,6 +56,18 @@ public class Binarytree {
         else{
             return node.value;
         }
-    }  
+    }
+    public String getmin(){
+       Node min;
+       if(root==null){
+        return null;
+       }
+       else{
+          min=root;
+          while (min.left!=null) {
+            min=min.left;
+       } 
+      return min.key;
+}} 
 }
 
